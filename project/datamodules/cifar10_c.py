@@ -44,7 +44,7 @@ class CIFAR10_C_DataModule(pl.LightningDataModule):
 class CIFAR10_C_Dataset(Dataset):
     """CIFAR-10 C(orruption) dataset"""
 
-    DOWNLOAD_URL = ""
+    DOWNLOAD_URL = "https://zenodo.org/record/2535967/files/CIFAR-10-C.tar?download=1"
 
     def __init__(self, data_dir="data/", noise="brightness", severity: int = 1):
         super(CIFAR10_C_Dataset, self).__init__()
